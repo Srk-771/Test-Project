@@ -54,7 +54,6 @@
                                 <contextUrl>http://159.89.175.95:8081/artifactory</contextUrl>
                                 <username>sharuk</username>
                                 <password>Admin@123</password>
-                                <excludePatterns>*-tests.jar</excludePatterns>
                                 <repoKey>libs-release-local</repoKey>
                                 <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                             </publisher>
