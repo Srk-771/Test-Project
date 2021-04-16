@@ -50,14 +50,6 @@
                             <goal>publish</goal>
                         </goals>
                         <configuration>
-                            <deployProperties>
-                                <maven>awesome</maven>
-                            </deployProperties>
-                            <artifactory>
-                                <includeEnvVars>true</includeEnvVars>
-                                <envVarsExcludePatterns>*password*,*secret*,*key*,*token*,*passphrase*</envVarsExcludePatterns>
-                                <timeoutSec>60</timeoutSec>
-                            </artifactory>
                             <publisher>
                                 <contextUrl>http://159.89.175.95:8081/artifactory</contextUrl>
                                 <username>sharuk</username>
