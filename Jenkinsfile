@@ -4,22 +4,16 @@ node {
     
         echo 'Hello World'
     }
-    post {
-
-        success {
-            echo "Now Archiving the Artifacts...."
+    stage('Deploy'){
            
-                
-            
-        }
+         echo 'good Morning'       
+              
     }
     stage('Create Tomcat Docker Image'){
            
         echo 'sharuk'
         echo 'Hello Sharuk'
-        
             
-        
 
     }
 }
