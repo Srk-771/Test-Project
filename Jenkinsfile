@@ -1,23 +1,25 @@
 node {
 
-    stage('Init') { 
+    stage('Build Application') {
+    
+        echo 'Hello World'
+    }
+    post {
 
-        echo 'Hi, this is Anshul from LevelUp360'
-        echo 'We are Starting the Testing'
-    }
-            
-    stage('Build') {
-        
-        echo 'Building Sample Maven Project'
-                  
-    }
-    stage('Deploy') {
+        success {
+            echo "Now Archiving the Artifacts...."
+           
                 
-        echo "Deploying in Staging Area"
-                  
+            
+        }
     }
-    stage('Deploy Production') {
-                 
-        echo "Deploying in Production Area"                         
-   }
+    stage('Create Tomcat Docker Image'){
+           
+        echo 'sharuk'
+        echo 'Hello Sharuk'
+        
+            
+        
+
+    }
 }
