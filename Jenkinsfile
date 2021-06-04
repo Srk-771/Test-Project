@@ -1,15 +1,20 @@
 node {
 
-	stage('git clone'){
+    stage('job name'){
+	job: 'Build_Pipeline'
+	description: 'Build the job using jenkinsfile'
+    }
 
-		url: 'https://github.com/Srk-771/Test-Project.git'
-		branch: 'master'
-		poll: '* * * * *'
-	}
+    stage('git clone'){
 
-	 stage('Build Application') {
+        url: 'https://github.com/Srk-771/Test-Project.git'
+	branch: 'master'
+	poll: '* * * * *'
+    }
+
+    stage('Build Application') {
     
-        echo 'Hello World'
+          echo 'Hello World'
     }
     stage('Deploy'){
            
@@ -20,5 +25,6 @@ node {
            
         echo 'sharuk'
         echo 'Hello Sharuk'
-    }
+    }    
+
 }
