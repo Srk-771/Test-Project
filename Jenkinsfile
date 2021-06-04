@@ -15,7 +15,7 @@ node {
 
 	 stage('Maven_Build') {
     
-             sh 'maven -f pom.xml, clean install'
+             sh 'M2_HOME -f pom.xml, clean install'
         }
    
 }
