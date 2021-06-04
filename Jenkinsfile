@@ -20,4 +20,5 @@ node {
            
         echo 'sharuk'
         echo 'Hello Sharuk'
+    }
 }
