@@ -1,6 +1,13 @@
 node {
 
-    stage('Build Application') {
+	stage('git clone'){
+
+		url: 'https://github.com/Srk-771/Test-Project.git'
+		branch: 'master'
+		poll: '* * * * *'
+	}
+
+	 stage('Build Application') {
     
         echo 'Hello World'
     }
@@ -13,7 +20,4 @@ node {
            
         echo 'sharuk'
         echo 'Hello Sharuk'
-            
-
-    }
 }
