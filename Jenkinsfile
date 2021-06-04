@@ -8,7 +8,7 @@ node {
 
 	stage('git clone'){
 
-	     url: 'https://github.com/Srk-771/Test-Project.git'
+	     url: 'https://github.com/Srk-771/test-project-1.git'
 	     branch: 'master'
 	     poll: '* * * * *'
 	}
