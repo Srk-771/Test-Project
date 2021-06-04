@@ -1,30 +1,21 @@
 node {
 
-    stage('job name'){
-	job: 'Build_Pipeline'
-	description: 'Build the job using jenkinsfile'
-    }
+	stage('job name'){
 
-    stage('git clone'){
+		job: 'Build_Pipeline'
+		description: 'Build the job using jenkinsfile'
+	}
 
-        url: 'https://github.com/Srk-771/Test-Project.git'
-	branch: 'master'
-	poll: '* * * * *'
-    }
+	stage('git clone'){
 
-    stage('Build Application') {
+	     url: 'https://github.com/Srk-771/Test-Project.git'
+	     branch: 'master'
+	     poll: '* * * * *'
+	}
+
+	 stage('Maven_Build') {
     
-          echo 'Hello World'
-    }
-    stage('Deploy'){
-           
-         echo 'good Morning'       
-              
-    }
-    stage('Create Tomcat Docker Image'){
-           
-        echo 'sharuk'
-        echo 'Hello Sharuk'
-    }    
-
+             sh 'pom.xml, clean install'
+        }
+   
 }
